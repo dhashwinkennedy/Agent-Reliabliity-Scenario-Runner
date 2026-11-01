@@ -8,12 +8,10 @@
 
 ## Team AxiomX
 
-| Member Name | Role & Focus |
-| :--- | :--- |
-| **Dhashwin Kennedy R** | Agent Architecture, Scenario Runner & Failure Injection |
-| **Kathirselvan T** | Offline Evaluation Engine, Metric Formulations & Consistency Analysis |
-| **Faisal Ahmed J** | Full-Stack Platform, Interactive Dashboard & Analytics Visualizations |
-| **Mohammed Fahad A** | Dataset Engineering, LLM Integration & Empirical Verification |
+- **Dhashwin Kennedy R**
+- **Kathirselvan T**
+- **Faisal Ahmed J**
+- **Mohammed Fahad A**
 
 ---
 
