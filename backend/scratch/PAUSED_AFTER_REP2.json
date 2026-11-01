@@ -1,0 +1,41 @@
+{
+  "status": "PAUSED_FOR_TONIGHT",
+  "paused_at": "2026-10-28T18:08:10.745422",
+  "reason": "User requested pause after Repetition 2",
+  "completed_repetitions": [
+    {
+      "experiment_id": "exp_postfix_baseline_003",
+      "repetition_index": 1,
+      "repetition_id": "rep_exp_postfix_baseline_003_1",
+      "status": "completed",
+      "evaluation_id": "eval_fc6d3756f935463cb9e2729a804e2348"
+    },
+    {
+      "experiment_id": "exp_postfix_baseline_003",
+      "repetition_index": 2,
+      "repetition_id": "rep_exp_postfix_baseline_003_2",
+      "status": "completed",
+      "evaluation_id": "eval_ce3b412986584846b77b1dfd35bbf163",
+      "metrics": {
+        "task_completion_rate": 50.0,
+        "unsupported_action_rate": 66.6667,
+        "recovery_rate": 100.0
+      }
+    }
+  ],
+  "pending_repetitions": {
+    "baseline_remaining": [
+      3,
+      4,
+      5
+    ],
+    "egal_remaining": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "resume_command": "python -u scripts/resume_postfix_v3.py"
+}

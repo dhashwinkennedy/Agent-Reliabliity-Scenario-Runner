@@ -1,0 +1,2 @@
+{"scenario_id": "SCENARIO-0", "category": "normal", "input": {"headline": "Company 0 reports quarterly earnings growth", "article": "Company 0 revenues grew by 15 percent year on year."}, "ground_truth": {"recommendation": "BUY", "sentiment": "positive"}}
+{"scenario_id": "SCENARIO-1", "category": "ambiguous", "input": {"headline": "Company 1 reports quarterly earnings growth", "article": "Company 1 revenues grew by 15 percent year on year."}, "ground_truth": {"recommendation": "BUY", "sentiment": "positive"}}

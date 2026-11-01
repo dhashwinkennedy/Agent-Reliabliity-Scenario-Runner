@@ -1,0 +1,67 @@
+# ==============================================================================
+# Research Arena Backend - .gitignore
+# ==============================================================================
+
+# Explicitly DO NOT ignore environment configuration files (transferred to private repo)
+!.env
+!.env.*
+!.env.example
+!.env.local
+!.env.development
+!.env.production
+
+# Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest & Testing Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Packaging & Build Artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# SQLite Runtime Lock / Write-Ahead Log Files (database platform.db is tracked)
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Temporary & Log Files
+*.log
+*.tmp
+scratch/*
+!scratch/PAUSED_AFTER_REP2.json

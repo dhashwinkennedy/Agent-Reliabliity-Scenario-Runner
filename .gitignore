@@ -1,0 +1,143 @@
+# ==============================================================================
+# Research Arena — Root Repository .gitignore
+# Frontend (React 19 / TypeScript / Vite) + Backend (FastAPI / SQLAlchemy / Python 3.12)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment Configuration Files (EXPLICITLY PRESERVED)
+# ------------------------------------------------------------------------------
+# Explicit repository requirement: Environment files (.env) are tracked for transfer.
+# NEVER blanket-ignore .env or .env.* files.
+!.env
+!.env.*
+!.env.example
+!.env.local
+!.env.development
+!.env.production
+!backend/.env
+!backend/.env.example
+!frontend/.env
+!frontend/.env.example
+
+# ------------------------------------------------------------------------------
+# 2. Node / Frontend Dependencies & Build Output
+# ------------------------------------------------------------------------------
+node_modules/
+*/node_modules/
+dist/
+*/dist/
+build/
+*/build/
+.npm/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+vite.config.ts.timestamp-*
+
+# ------------------------------------------------------------------------------
+# 3. Python Virtual Environments
+# ------------------------------------------------------------------------------
+.venv/
+*/.venv/
+venv/
+*/venv/
+env/
+*/env/
+ENV/
+*/ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 4. Python Cache & Bytecode
+# ------------------------------------------------------------------------------
+__pycache__/
+*/__pycache__/
+*/**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ------------------------------------------------------------------------------
+# 5. Testing & Coverage Caches
+# ------------------------------------------------------------------------------
+.pytest_cache/
+*/.pytest_cache/
+.mypy_cache/
+*/.mypy_cache/
+.ruff_cache/
+*/.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.lcov
+
+# ------------------------------------------------------------------------------
+# 6. Packaging & Distribution Artifacts
+# ------------------------------------------------------------------------------
+*.egg-info/
+*/.egg-info/
+*.egg
+.eggs/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# ------------------------------------------------------------------------------
+# 7. Operating System Artifacts
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------------------------------------------------------------
+# 8. IDE, Editor & Workspace Artifacts
+# ------------------------------------------------------------------------------
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ------------------------------------------------------------------------------
+# 9. SQLite Ephemeral Runtime Files (platform.db is tracked)
+# ------------------------------------------------------------------------------
+# Lock files and write-ahead logs during active transactions are ephemeral,
+# but the primary database file platform.db must be preserved and committed.
+*.db-wal
+*.db-shm
+*.db-journal
+
+# ------------------------------------------------------------------------------
+# 10. Temporary Files & Logs
+# ------------------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+
+# ------------------------------------------------------------------------------
+# 11. Research Artifacts & Reproducibility Preservations
+# ------------------------------------------------------------------------------
+# Preserve research reports, experimental snapshots, fixtures, and evaluations
+!backend/platform.db
+!backend/data/
+!backend/data/**
+!backend/scripts/
+!backend/scripts/**
+!backend/scratch/
+!backend/scratch/**
+!backend/scratch/PAUSED_AFTER_REP2.json

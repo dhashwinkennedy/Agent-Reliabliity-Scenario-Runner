@@ -1,0 +1,4 @@
+{"id":"rec_1","prompt":"apple earnings","ground_truth":"positive"}
+{"id":"rec_2","prompt":"google cloud","ground_truth":"growth"}
+{"id":"rec_3","prompt":"microsoft azure","ground_truth":"guidance"}
+{"id":"rec_4","prompt":"amazon aws","ground_truth":"stable"}

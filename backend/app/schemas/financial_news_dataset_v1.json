@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Financial News Dataset Record v1.0",
+  "type": "object",
+  "required": ["record_schema_version", "scenario_id", "category", "input", "ground_truth"],
+  "properties": {
+    "record_schema_version": {"const": "1.0"},
+    "scenario_id": {"type": "string", "minLength": 1},
+    "category": {"enum": ["normal", "ambiguous", "failure"]},
+    "input": {"$ref": "#/definitions/financial_news_input"},
+    "ground_truth": {"type": "object"},
+    "metadata": {"type": "object"}
+  },
+  "definitions": {
+    "financial_news_input": {
+      "type": "object", "required": ["schema_version", "scenario_id", "ticker", "company_name", "task", "retrieval_mode", "evidence"],
+      "properties": {"schema_version":{"const":"1.0"},"retrieval_mode":{"enum":["provided_evidence","tavily_live"]},"evidence":{"type":"array"}}
+    }
+  }
+}
